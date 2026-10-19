@@ -1,0 +1,38 @@
+<!doctype html>
+<!-- THESIS: A readable consent reference, not a public assistant dashboard.
+OWN-WORLD: Tigger paper/ink palette, fine rules, system type; no assets or animation.
+STORY: Identify the assistant, understand Google access, read the policy.
+FIRST VIEWPORT: Plain masthead, app identity left and scope explanation right.
+FORM: Narrow two-page documentation extension; no concept seed for this pinned brief. -->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Public app information for ai project, the Google OAuth application used by Peter's Tigger personal assistant.">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; style-src 'unsafe-inline'; base-uri 'none'; form-action 'none'; connect-src 'none'; object-src 'none'">
+  <title>ai project · Tigger — App information</title>
+  <style>
+    :root{--paper:#f5f2eb;--ink:#171714;--muted:#716d65;--rule:#d2ccc0;--accent:#a94b12}
+    *{box-sizing:border-box}html{background:var(--paper);color:var(--ink)}body{margin:0;font-family:Arial,"Helvetica Neue",sans-serif;font-size:17px;line-height:1.7}a{color:var(--accent);text-underline-offset:.2em;overflow-wrap:anywhere}a:focus-visible{outline:2px solid var(--accent);outline-offset:5px}.skip{position:absolute;top:12px;left:16px;background:var(--paper);padding:8px;transform:translateY(-180%)}.skip:focus{transform:none}.wrap{width:min(1080px,100%);margin:auto;padding:0 36px}header{display:flex;justify-content:space-between;gap:24px;align-items:center;padding:30px 0;border-bottom:1px solid var(--ink)}.brand{font-weight:700;font-size:24px;letter-spacing:-.035em;color:var(--ink);text-decoration:none}nav{display:flex;flex-wrap:wrap;gap:20px}nav a{display:inline-flex;align-items:center;min-height:44px;font-size:15px}main{padding:64px 0 80px}.intro{display:grid;grid-template-columns:1.1fr 1fr;gap:64px;align-items:start;margin-bottom:64px}.label{color:var(--muted);font-size:14px;margin:0 0 16px}h1{font-size:clamp(40px,7vw,70px);line-height:1.08;letter-spacing:-.035em;margin:0 0 24px;text-wrap:balance}h2{font-size:25px;line-height:1.3;letter-spacing:-.02em;margin:44px 0 16px}p{margin:0 0 20px}.lead{font-size:21px;line-height:1.55}.reading{max-width:72ch}.intro p:last-child{margin-bottom:0}section{border-top:1px solid var(--rule);padding-top:6px}ul{padding-left:22px}li{padding-left:4px;margin:12px 0}.note{color:var(--muted);font-size:15px}footer{border-top:1px solid var(--ink);padding:26px 0 40px;font-size:14px;color:var(--muted);display:flex;gap:24px;justify-content:space-between;flex-wrap:wrap}@media(max-width:680px){.wrap{padding:0 22px}header{display:block;padding:22px 0}nav{margin-top:10px}.intro{grid-template-columns:1fr;gap:24px;margin-bottom:42px}main{padding:40px 0 54px}h2{margin-top:32px}body{font-size:16px}}
+  </style>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="wrap">
+  <header><a class="brand" href="./">Tigger</a><nav aria-label="Main navigation"><a href="./" aria-current="page">App information</a><a href="privacy.html">Privacy policy</a></nav></header>
+  <main id="main">
+    <div class="intro">
+      <div><p class="label">Google OAuth app: ai project</p><h1>A personal assistant.<br>Not a public dashboard.</h1></div>
+      <div><p class="lead">Tigger helps Peter organise his calendar, understand important mail and keep track of work.</p><p>Operated by Peter Leung for personal use. Hermes is the underlying assistant runtime. This public information site explains the app; it does not provide access to the assistant, a calendar, an inbox or a task board.</p><p lang="zh-Hant">這裡只公開 App 說明與私隱政策，不公開私人行程、郵件、對話或 Notion 看板。</p></div>
+    </div>
+    <div class="reading">
+      <section aria-labelledby="google-access"><h2 id="google-access">What Google access is for</h2><ul><li><strong>Google Calendar:</strong> read calendars and events, check availability and help with requested scheduling. The Calendar permission also allows event changes; changes must follow the owner's instructions and confirmation rules.</li><li><strong>Gmail read-only:</strong> find and read relevant messages, summarise them and identify follow-up actions. This grant does not permit sending, deleting or modifying Gmail messages.</li></ul><p>The integration uses Google's consent screen and offline authorization so the local assistant can refresh access without requesting sign-in on every use. Access can still be revoked or expire under Google's rules.</p></section>
+      <section aria-labelledby="processing"><h2 id="processing">An assistant with clear boundaries</h2><p>Requested information may be processed by configured AI services and delivered through the owner's messaging channels. Relevant conversations or summaries may be retained in assistant memory, owner-controlled files or a private Notion workspace. The assistant is not a local-only data system.</p><p>This website contains no Google sign-in form, connected account data, tracking script or assistant API. Authorizing Google access is a separate action on Google's own consent screen.</p><p><a href="privacy.html">Read how data is accessed, processed and retained →</a></p></section>
+      <section aria-labelledby="support"><h2 id="support">Support</h2><p>For authorization, access or deletion questions, use the support email shown on the Google consent screen for <strong>ai project</strong>. Do not post access tokens, authorization callbacks or private account content in public issue trackers.</p><p class="note">Google is not the operator of Tigger. This page does not claim Google verification or approval.</p></section>
+    </div>
+  </main>
+  <footer><span>ai project · Tigger · Peter Leung</span><span>Updated 19 October 2026 · <a href="privacy.html">Privacy policy</a></span></footer>
+</div>
+</body>
+</html>
